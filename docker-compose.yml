@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  k8s.service.template:
+    ports:
+      - "80:7777"
+    environment:
+      - name=value
