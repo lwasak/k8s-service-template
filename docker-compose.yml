@@ -3,6 +3,12 @@ version: '3.9'
 services:
   k8s.service.template:
     ports:
-      - "80:7777"
+      - "7777:80"
+    build:
+      context: .
+      dockerfile: K8s.Service.Template/Dockerfile
+      args:
+        VSS_NUGET_EXTERNAL_FEED_ENDPOINTS: ${VSS_NUGET_EXTERNAL_FEED_ENDPOINTS}
     environment:
-      - name=value
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: http://+:80

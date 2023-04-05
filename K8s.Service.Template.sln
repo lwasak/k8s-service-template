@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K8s.Service.Template", "K8s.Service.Template\K8s.Service.Template.csproj", "{1BB62CEE-02D1-4CE1-8832-B6918C777600}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "K8s.Service.Template", "K8s.Service.Template\K8s.Service.Template.csproj", "{1BB62CEE-02D1-4CE1-8832-B6918C777600}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0C65483A-D376-11ED-AFA1-0242AC120002}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,15 @@ Global
 		{1BB62CEE-02D1-4CE1-8832-B6918C777600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BB62CEE-02D1-4CE1-8832-B6918C777600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BB62CEE-02D1-4CE1-8832-B6918C777600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C65483A-D376-11ED-AFA1-0242AC120002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C65483A-D376-11ED-AFA1-0242AC120002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C65483A-D376-11ED-AFA1-0242AC120002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C65483A-D376-11ED-AFA1-0242AC120002}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D774E98E-0D1B-41E2-9DDB-C377209D43BA}
 	EndGlobalSection
 EndGlobal
