@@ -21,6 +21,7 @@ builder.Services
 
 var app = builder.Build();
 
+app.UseMetricServer();
 app.UseRouting();
 // IMPORTANT: UseHttpMetrics must be after UseRouting
 app.UseHttpMetrics();
